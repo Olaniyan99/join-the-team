@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://root:example@localhost:27017';
 
-MongoClient.connect(url, { useNewUrlParser: true }, function (err, client) {
+MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true  }, function (err, client) {
   if (err) throw err;
   
   client.db('task-service').collection('tasks').insertOne({ text: 'This is a sample task', completed: false })

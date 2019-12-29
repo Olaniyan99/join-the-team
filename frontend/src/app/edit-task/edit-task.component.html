@@ -1,0 +1,14 @@
+<div class="modal-box">
+    <h1 style="color: rgb(194, 86, 194); font-size:22px; font-weight:bolder;" > Edit Task</h1>
+
+    <div class="field has-addons">
+        <div class="control">
+          <input #taskTextInput class="input" type="text" placeholder="Enter task...">
+        </div>
+        <div class="control">
+          <a class="button is-info" style="background-color: rgb(192, 101, 192);" (click)="updateTask(taskTextInput.value)" > Save </a>
+        </div>
+      </div>
+
+      <button routerLink="/" class="backButton">&laquo; Go Back</button>
+</div>

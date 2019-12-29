@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="modal-box">
+        <h4 style="color: rgb(194, 86, 194); font-size:22px; font-weight:bolder;" > Rename List, click 'save' then click 'Go Back'</h4>
+
+        <div class="field has-addons">
+            <div class="control">
+              <input #listNameInput class="input" type="text" placeholder="Enter list name">
+            </div>
+            <div class="control">
+              <button class="button is-info" style="background-color: rgb(192, 101, 192);" (click)="updateList(listNameInput.value)"> Save </button>
+            </div>
+          </div>
+
+          <button routerLink="/" class="backButton">&laquo; Go Back</button>
+    </div>
+</div>

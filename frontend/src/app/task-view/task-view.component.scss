@@ -1,0 +1,164 @@
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+}
+
+.task-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width:1000px;
+    max-height: 680px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background: rgb(252, 252, 252);
+    padding: 42px;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.Task-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 42px;
+    background-color: #f8f8ff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.listMenu{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 15px;
+    flex-grow: 1;
+    .listMenu-iteams{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+        color: gray;
+
+        cursor: pointer;
+        transition: box-shadow 0.2s ease, transform .2s ease;
+
+
+        &:hover{
+            background-color: lightgray;
+          }
+          &.is-active{
+              background-color: rgb(240, 216, 245);
+            //   color: darkblue;
+          }
+          &:active{  //on-click animation
+            transform: scale(.90);
+        }
+    }
+ 
+
+}
+.addListbutton{
+    background-color: rgb(194, 86, 194) ;
+    color:white;
+    font-size: large;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.taskiteams{
+    display: flex;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top:10px;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        right:0;
+        margin-right:50px;
+        position: absolute;
+        p{
+            margin-left:5px;
+        }
+    }
+
+    &:not(.complete){
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform .2s ease;
+
+    &:active{  //on-click animation
+        transform: scale(.90);
+    }
+    &:hover{
+        box-shadow: 0 0 0 5px #eeeeee;
+      }
+}
+    &.complete .task-text{
+        text-decoration:line-through;
+    }
+
+
+    .task-text{
+        flex-grow: 1;
+        display: flex;
+    }
+
+
+}
+
+.listOptions{
+    color: rgb(194, 86, 194);
+    position: absolute;
+    bottom: 15px;
+
+}
+
+.btn-circle {
+    border: none;
+    color:white;
+    background-color: rgb(194, 86, 194) ;
+    width: 60px;
+    height: 60px;
+    bottom:15px;
+    right: 15px;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 24px;
+    line-height: 1.33;
+    outline: none;
+}
+
+#editList #deleteList{
+    background-color:rgb(194, 86, 194); 
+    width: 80px; 
+    color: white; 
+
+}
+
+
