@@ -6,8 +6,11 @@
 
 "npm start"
 
+Then navigate to the "frontend" folder and type in "npm install"
 
-Then navigate to the "frontend" folder and type in "ng serve" to launch on localhost:4200
+Then "ng serve" to launch on localhost:4200
+
+
 
 
 To Create a new List, click the +add button, type the name of list, click create and then click go back to view the new list created.
