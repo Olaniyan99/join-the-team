@@ -4,7 +4,6 @@
 
 "docker-compose up"
 
-"npm install"
 
 Then navigate to the "frontend" folder and type in "ng serve" to launch on localhost:4200
 
