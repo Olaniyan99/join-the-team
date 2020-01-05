@@ -25,12 +25,12 @@
                     <p>{{ task.text }}</p>
                 </div>  
                 
-                <div class="task-buttons" style="margin-left: 400px;">
+                <div class="task-buttons" style="margin-left: 200px; position: absolute;">
                     <button class="button" [routerLink]="['/lists', selectedListId, 'edit-task', task._id]">
                         <i class="fas fa-edit">edit</i>
                     </button>
     
-                    <button class="button" (click)="deleteTaskClick(task._id)" style="margin-left: 10px;">
+                    <button class="button is-danger" (click)="deleteTaskClick(task._id)" style="margin-left: 10px; position: absolute;">
                         <i>delete</i>
                     </button>
         
